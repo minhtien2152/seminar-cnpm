@@ -5,12 +5,16 @@
   "main": "index.js",
   "scripts": {
     "start": "node app",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lbrr": "cross-env NODE_CLUSTER_SCHED_POLICY=rr node withLB",
+    "lb": "node withLB"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.3",
+    "cross-env": "^7.0.3",
+    "crypto": "^1.0.1",
+    "express": "^4.18.1",
     "node-fetch": "^2.6.7",
     "request": "^2.88.2"
   }
